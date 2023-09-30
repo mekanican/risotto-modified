@@ -1,4 +1,4 @@
 {{ define "main" }}
-    {{ .Content }}
+    {{ replaceRE "(\\:([a-zA-Z0-9_]*)\\:)" `<img class="emoji" src="/emojis/${2}.svg" alt="${1}" title="${1}">` .Content | markdownify | safeHTML }}
 {{ end }}
 
