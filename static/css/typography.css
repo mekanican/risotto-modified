@@ -1,6 +1,13 @@
 /* Fonts */
 :root {
-    --font-monospace: "Fira Mono", monospace;
+    --font-monospace: "MesloLGM";
+}
+
+@font-face {
+    font-family: "MesloLGM";
+    src: url('/fonts/MesloLGMNerdFont-Regular.ttf') format('truetype');
+    /* font-weight: normal;
+	font-style: normal; */
 }
 
 body {

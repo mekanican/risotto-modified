@@ -42,13 +42,19 @@
 .page__body {
     grid-area: body;
     background-color: var(--off-bg);
-    box-shadow: 0 0 0 1rem var(--off-bg);
+    /* box-shadow: 0 0 0 1rem var(--off-bg); */
+    padding: 1rem 1rem 1rem 1rem;
     overflow-wrap: break-word;
 }
 
 .page__aside {
     grid-area: aside;
     color: var(--off-fg);
+    position: sticky;
+    top: 1rem;
+    right: 1rem;
+    overflow-y: auto;
+    max-height: 95vh;
 }
 
 /* Footer */
